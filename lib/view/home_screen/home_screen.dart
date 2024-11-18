@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Expanded(
-                      child: Image.network('https://mansharcart.com/image/${product.thumb}',
+                      child: Image.network('https://mansharcart.com/image/${product.thumb}'.replaceAll("\\","/"),
                       fit: BoxFit.cover,
                       errorBuilder: (context, error, stackTrace) => Icon(Icons.image_not_supported_sharp),
                       ),

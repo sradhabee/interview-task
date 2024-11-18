@@ -21,7 +21,7 @@ class ProductDetailScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.grey.shade200,
               borderRadius: BorderRadius.circular(10),
-              image: DecorationImage(image: NetworkImage("https://mansharcart.com/image/${product.thumb}",
+              image: DecorationImage(image: NetworkImage("https://mansharcart.com/image/${product.thumb}".replaceAll("\\",""),
               
               )
               ,
